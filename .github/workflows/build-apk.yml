@@ -33,9 +33,8 @@ jobs:
           npx cap add android
           npx cap sync android
           
-          # Sahi tarah se Kotlin conflict resolve karne ke liye
+          # Correct repository block for Gradle
           echo "allprojects { repositories { google() mavenCentral() } }" >> android/build.gradle
-          echo "subprojects { afterEvaluate { project -> if (project.hasProperty('android')) { project.android { compileSdk 34 } } } }" >> android/build.gradle
           
           cd android
           chmod +x gradlew
