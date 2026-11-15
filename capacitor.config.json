@@ -1,0 +1,6 @@
+{
+  "appId": "com.attendpro.hr",
+  "appName": "AttendPro HR",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
